@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}Gold Confirmation{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<h1 align="center">Congrats, you're a total pro!</h1>
+<p align="center">To start using your new features, just login to the iToven Desktop app, and it will automatically detect your subscription. Every month, you will automatically be given 500 download credits.</p>
+<form method="POST">
+<button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+<button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+<button type ="submit" name= "home-redirecters" value="redirecter-account" class="btn btn-secondary">My Account</button>
+</form>
+{% endblock %}

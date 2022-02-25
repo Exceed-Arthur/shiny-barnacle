@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% block title %}My Account{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/third.css') }}">
+</head>
+<h1 align="center">Your Account</h1>
+<br>
+<h3>Details:</h3>
+<br>
+<p>Username: {{username}}</p>
+<br>
+<p>Plan/Subscription: {{membership_status}}</p>
+<br>
+<p>Favorites Count: {{favorites_count}}</p>
+<br>
+<p>Download Credits: {{credits_count}}</p>
+<br>
+
+<form method="POST">
+    <button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+    <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<form method="POST">
+  <h3 align="center">Verify Email</h3>
+  <div class="form-group">
+    <label for="code_verify_id">This code will expire in 20 minutes. We trust you.</label>
+    <input
+      type="text"
+      class="form-control"
+      id="code_verify_id"
+      name="verify_code"
+      placeholder="Enter 6 digit code sent to your email address."
+    />
+  </div>
+
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

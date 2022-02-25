@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+<h1 align="center">User Portal</h1>
+<p><img src="/static/cello.png" alt="instro" style=width:206px;height:300px;">
+<div class="center">
+    <form method="POST">
+    <button type ="submit" name= "home-redirecters" value="redirecter-download" class="btn btn-primary" style="width:100%">Download iToven AI for Mac/PC</button>
+    <br><br>
+    <button type ="submit" name= "home-redirecters" class="btn btn-primary" value="redirecter-account" style="width:100%">Account</button>
+    <br><br>
+    <button type ="submit" name= "home-redirecters" value="redirecter-membership" class="btn btn-primary" style="width:100%">Pro Membership</button>
+    <br><br>
+    <button type ="submit" name= "home-redirecters" value="redirecter-lander" class="btn btn-secondary" style="width:100%">iToven Landing Page</button>
+    </form>
+</div>
+<img src="/static/cello1.png" alt="instro" style=width:206px;height:300px;">
+</p>
+</body>
+{% endblock %}

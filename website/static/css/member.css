@@ -1,0 +1,55 @@
+head {
+    foreground-color: white;
+    }
+
+body {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+
+    }
+body > div > h1 {
+    padding: 72px;
+    color: white;
+    font-size: 96px;
+    text-align:center}
+
+.center {
+    border-radius: 25px;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 16px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+html {
+    position: relative;
+    min-width: 1200px;
+    min-height: 768px;
+    height: 100%;
+}
+
+* {
+    font-family: julius sans one;
+  }
+body > div > p {
+   font-size: 32px;
+   color: white;
+   }
+body > div > form > button.btn.btn-primary {
+    align: center;
+    font-size: 16px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 10px 14px 10px;
+    color: white;
+    }

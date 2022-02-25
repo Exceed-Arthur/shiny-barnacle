@@ -1,0 +1,162 @@
+head {
+    foreground-color: white;
+    }
+
+body {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+
+    }
+body > div > h1 {
+    padding: 72px;
+    color: #FFFACD;
+    font-size: 96px;
+    text-align:center}
+
+
+
+
+
+body > div > div > form > button:nth-child(4) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 12px 154px;
+    color: #FFFACD;
+}
+
+
+
+body > div > form > button:nth-child(9) {
+    align: center;
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 107px 14px 107px;
+    color: #FFFACD;
+}
+
+html {
+    position: relative;
+    min-width: 1200px;
+    min-height: 768px;
+    height: 100%;
+}
+
+body > div > div {
+    position: absolute;
+    bottom: 8%
+
+}
+
+
+body > div > div > form > button:nth-child(1) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 4px 25px 4px 25px;
+    color: #F3CFC6;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+body > div > div > form > button:nth-child(2) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 4px 25px 4px 25px;
+    color: #F3CFC6;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+body > div > form > div > div > p {
+    font-size: 20px;}
+
+
+
+body > div > form > div > div > button:nth-child(5) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 4px 185px 4px 185px;
+    color: #F3CFC6;
+}
+
+body > div > form > div > div > h4:nth-child(6) {
+    font-size: 42;
+   }
+
+body > div > form > div > div > h4:nth-child(1) {
+    font-size: 42;
+}
+body > div > form > div > div > h4:nth-child(4) {
+   padding: 12px 0px 30px 0px;
+   }
+
+body > div > form > div:nth-child(1) > p {
+   font-size: 20px;
+   }
+body > div > form > div:nth-child(4) > div {
+    padding: 20px;
+}
+body > div > form > div:nth-child(1) > h1 {
+   padding: 12px 0px 0px 0px;}
+body > div > form > div.container > h1 {
+    font-size: 56px;
+}
+body > div > form {
+   padding: 20px;
+   }
+
+
+body > div > form > div.center > button:nth-child(5) {
+    font-size: 22px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 4px 185px 4px 185px;
+    color: #F3CFC6;
+}
+body > div > form > div.center > button:nth-child(3) {
+    font-size: 22px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 4px 179px 4px 179px;
+    color: #F3CFC6;
+}
+
+body > div > form > div.center > h4:nth-child(1) {
+    font-size: 32px;}
+
+body > div > form > div.center > p {
+    font-size: 24px;}
+
+
+# Download for PC Label
+body > div > form > div.center > h4:nth-child(4) {
+    padding: 12px 0px 0px 0px;
+    font-size: 32px;}}
+
+* {
+    font-family: tahoma;
+  }
+
+body > div > p {
+    font-size: 28px;
+    color: white;
+}
+body > div > h3 {
+   font-size: 36px;
+   color: white;
+   }
+
+body > div > h1 {
+   color: white;
+   }

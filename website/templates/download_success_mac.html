@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Downloading Now: iToven Sounds - Musical AI{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/second.css') }}">
+</head>
+<form method="POST">
+    <div class="container">
+
+<h1 align="center">Thanks For Downloading!</h1>
+<p align="center" style="width:100%">This application is our flagship software. Fully integrated with all DAWs and Mac/PC computers. You must have download credits (pro subscription) to download files, but previews and musical ideas are always free to use! Includes 40+ unique instruments, and millions of sounds.</p>
+    </div>
+        <br>
+
+<h4 align="center">Check Downloads Folder For Zip File and Extract The Setup/Installer</h4>
+<h3>Looking For Something Else?</h3>
+<button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+<button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+s
+</form>
+{% endblock %}

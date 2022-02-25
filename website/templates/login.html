@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<p>
+<img src="static/cello.png" alt="Italian Trulli">
+<br>
+<br>
+<form method="POST">
+  <h2 align="center">Login</h2>
+  <p align="center">Sign-in to download iToven AI for Desktop or manage your subscription and account.</p>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Enter password"
+    />
+  </div>
+  <button type="submit" name="submit-both" class="btn btn-primary" value="login">Login</button>
+  <button type="submit" name="submit-both" class="btn btn-primary" value="forgot">Forgot Password</button>
+  <button type="submit" name="submit-both" class="btn btn-secondary" value="Sign Up">Sign Up</button>
+  <br>
+  <br>
+  <br>
+  <button type ="submit" name="submit-both" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+
+</form>
+<br>
+<img src="static/cello1.png" alt="Italian Trulli">
+
+{% endblock %}

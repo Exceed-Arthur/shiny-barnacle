@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block title %}Unlock Full Features{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/member.css') }}">
+</head>
+<body>
+{% if (membership_status == "Free") %}
+<h1 align="center">Activate Membership</h1>
+<p align="center">A pro subscription will give you full access to the iToven AI Music Library. Once subscribed, you can immediately start using iToven MIDI sounds (royalty-free) in your next musical project! Just sign in to your account on the desktop application. It will automatically detect your subscription (fancy, right?). Find it in the Downloads tab. You can cancel your subscription anytime.</p>
+<br>
+<br>
+<form method="POST">
+    <h3 align="center">Pro Plans</h3>
+    <p>Silver ($7.99 - Tax Included): 500 Downloads/Month<button type="button" class="btn btn-primary" name="home-redirecters" value="silver">Buy Silver</button></p>
+    <p>Gold ($13 - Tax Included): 1000 Downloads/Month<button type="button" class="btn btn-primary" name="home-redirecters" value="gold">Buy Gold</button></p>
+    <button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+    <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+</form>
+{% elif (membership_status == "Silver") %}
+<h1 align="center">My Membership</h1>
+<p align="center">Thanks for being a pro member! You can either return to the user portal or manage your subscription here.</p>
+<br>
+<form method="POST">
+    <h3>Enjoying the service and looking to upgrade? Got you covered.</h3>
+    <button type="button" class="btn btn-primary" name="home-redirecters" value="upgrade">Upgrade My Subscription</button>
+    <br><br>
+    <h5>No longer need the service? No problem! You can always resubscribe later.</h5>
+    <button type="button" class="btn btn-primary" name="home-redirecters" value="cancel">Cancel My Subscription</button>
+    <br>
+    <br>
+    <br>
+    <button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+    <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+</form>
+{% elif (membership_status == "Gold") %}
+<h1 align="center">My Membership</h1>
+<p align="center">Thanks for being a pro member! You can either return to the user portal or manage your subscription here.</p>
+<br>
+<form method="POST">
+    <h5>We'd hate to see you go! You can always resubscribe or upgrade after.</h5>
+    <button type="button" class="btn btn-primary" name="home-redirecters" value="cancel">Cancel My Subscription</button>
+    <br><br>
+    <h5>Looking to cut-back? We got you covered. Downgrade and keep 500 credits every month!</h5>
+    <p>Silver ($7.99 - Tax Included): 500 Downloads/Month<button type="button" class="btn btn-primary" name="buy-both" value="silver">Buy Silver</button></p>
+
+</form>
+</body>
+{% endif %}
+{% endblock %}

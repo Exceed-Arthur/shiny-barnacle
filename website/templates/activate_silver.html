@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Become a Silver Member{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/fifth.css') }}">
+</head>
+<h1 align="center">Activate Silver</h1>
+
+<div id="paypal-button-container-P-4055617056877182NMH36IKI"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AdtB5GyiTS6zzl6x3s4gs1ikkyOf2QZMevqgaPHKZwmF93xXszY5Ok96S1pIJAy8mXV2YkwtG5vk8biC&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'silver',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-4055617056877182NMH36IKI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+        window.open("http://127.0.0.1:5000/ExecuteSilver?00D0OD%OO8OO@!ii1IILIliIED36D807974A9BDA7Bi1230589ufyc??fculknig0154aq35115asfasfasfaq3219196349578D662C29BA9FAB14EFA55DF7341F8E3F6B5E01C572EB467DEB14CD08DC5D2F332991EF1CAE5DCC11AB422EC6A1E2AC1B268A6us6er?83381li02oiH8B9F68BD4BD1F9B5572F2D379128D062468C847DA4F9C2B379081F409A2589DA","_self")
+      }
+  }).render('#paypal-button-container-P-4055617056877182NMH36IKI'); // Renders the PayPal button
+</script>
+
+<form method="POST">
+    <button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+    <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+</form>
+
+
+{% endblock %}

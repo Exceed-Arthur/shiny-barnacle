@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Get Desktop App{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/second.css') }}">
+</head>
+<form method="POST">
+    <div class="container">
+
+<h1 align="center">Download our Desktop App!</h1>
+<p align="center" style="width:100%">This application is our flagship software. Fully integrated with all DAWs and Mac/PC computers. You must have download credits (pro subscription) to download files, but previews and musical ideas are always free to use! Includes 40+ unique instruments, and millions of sounds.</p>
+    </div>
+        <br>
+    <div class="center">
+<h4 align="center">For Mac Users</h4>
+<p align="center">You may have to allow unidentified developers in your computer settings to complete installation. It only takes 5 seconds! Instructions here: <a href="https://macpaw.com/how-to/unidentified-developer-mac">Install Tips</a></p>
+<button type="submit" class="btn btn-primary" name="home-redirecters" value="mac_download" style="width:100%">Download (DMG Installer)</button>
+
+<h4 align="center">For PC</h4>
+<button type="submit" class="btn btn-primary" name="home-redirecters" value="pc_download" style="width:100%">Download (EXE Installer)</button><br>
+</div>
+<br><br>
+<h3>Looking For Something Else?</h3>
+<button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+<button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+
+</form>
+{% endblock %}

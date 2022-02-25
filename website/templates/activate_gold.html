@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Become a Gold Member{% endblock %} {% block content
+%}
+<head><link rel="stylesheet" href="{{ url_for('static', filename='css/fifth.css') }}">
+</head>
+<h1 align="center">Activate Gold</h1>
+
+<div id="paypal-button-container-P-2S5797261D0466818MH36J5A"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AdtB5GyiTS6zzl6x3s4gs1ikkyOf2QZMevqgaPHKZwmF93xXszY5Ok96S1pIJAy8mXV2YkwtG5vk8biC&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'silver',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-2S5797261D0466818MH36J5A'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+        window.open("http://127.0.0.1:5000/ExecuteGold?DE67000101010D0OD%OO8OO@!ii1IILIliIED36D807974A9BDA7Bi1230589ufyc??fculknig0154aq35115asfasfasfaq3219196349578D662C29BA010000010100101@932EE9B187E0048830A48F0134D5E217F1CDCA208D8797DC0D36825E6BB6DD00OLJLjlijOD%OO81liLLl?!%$%OO8083O543240OC943F91illiC5CAOD0B8FCB87C530DlI1@!0OO6C08BE0","_self")
+      }
+  }).render('#paypal-button-container-P-2S5797261D0466818MH36J5A'); // Renders the PayPal button
+</script>
+
+<form method="POST">
+    <button type ="submit" name= "home-redirecters" value="redirecter-portal" class="btn btn-secondary">Back to Portal</button>
+    <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
+</form>
+
+
+{% endblock %}
