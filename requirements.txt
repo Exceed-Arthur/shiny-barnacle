@@ -75,3 +75,4 @@ sqlparse==0.4.2
 urllib3==1.26.7
 webcolors==1.11.1
 Werkzeug==2.0.2
+flask-bootstrap==3.3.7.0
