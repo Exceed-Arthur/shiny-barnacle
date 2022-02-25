@@ -9,7 +9,9 @@ DB_NAME = "database.db"
 
 
 def create_app():
+    print("line12 init")
     app = Flask(__name__)
+    print(app)
     app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
