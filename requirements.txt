@@ -23,7 +23,7 @@ joblib
 jsonpickle
 kiwisolver
 macholib
-MarkupSafe
+MarkupSafe==2.1.0
 more-itertools
 packaging
 pyparsing
