@@ -5,10 +5,10 @@ from flask_login import login_user, login_required, logout_user, current_user
 from urllib3.packages.six import wraps
 import os
 import server_functions
-from .models import User
+from website.models import User
 import server_funcs
-from .models import Note
-from . import db
+from website.models import Note
+from website import db
 import json
 views = Blueprint('views', __name__)
 
