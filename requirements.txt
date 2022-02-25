@@ -62,7 +62,6 @@ joblib
 jsonpickle
 kiwisolver
 macholib
-MarkupSafe
 packaging
 pyparsing
 python-dateutil
