@@ -20,7 +20,7 @@ def get_favorites_list_user(username: str):
             aws_access_key_id=cred.AWSAccessKeyId,
             aws_secret_access_key=cred.AWSSecretKey,
             region_name="us-east-2")
-        dynamodb = boto3.resource('dynamodb',
+        dynamodb = boto3.client('dynamodb',
                                   aws_access_key_id=cred.AWSAccessKeyId,
                                   aws_secret_access_key=cred.AWSSecretKey,
                                   region_name="us-east-2")
@@ -465,7 +465,7 @@ def create_dyno_acct(username: str, platypus: str):
     AWSAccessKeyId = cred.AWSAccessKeyId
     AWSSecretKey = cred.AWSSecretKey
     table = 'itoven_nottauserbase'
-    dynamodb = boto3.client(
+    dynamodb = boto3.resource(
         service_name='dynamodb',
         region_name="us-east-2",
         aws_access_key_id=AWSAccessKeyId,
