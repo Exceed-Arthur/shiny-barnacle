@@ -10,7 +10,6 @@ from random import randrange
 import email_funcs
 
 auth = Blueprint('auth', __name__)
-
 email = ''
 password1 = ''
 password2 = ''
