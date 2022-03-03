@@ -16,7 +16,6 @@ password2 = ''
 six_digit_code = ''
 
 
-
 @auth.route('/Login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -67,7 +66,6 @@ def logout():
 
 @auth.route('/Register', methods=['GET', 'POST'])
 def sign_up():
-    print("hello70")
     global email
     global password1
     global password2
