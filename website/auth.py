@@ -80,7 +80,7 @@ def sign_up():
             user = User.query.filter_by(email=email).first()
             if user:
                 flash('Email already exists.', category='error')
-            elif email in server_funcs.txt_file_to_list('/static/bad_emails.txt'):
+            elif email in server_funcs.txt_file_to_listv2('/static/bad_emails.txt'):
                 flash('Sneaky! I worked too hard on this project to allow disposable emails. Try a safer email provider.')
             elif len(email) < 4:
                 flash('Email must be greater than 3 characters.', category='error')
