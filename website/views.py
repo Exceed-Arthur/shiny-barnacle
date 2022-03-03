@@ -101,7 +101,6 @@ def download_pc():
         return redirect(url_for('views.download_page'))
     else:
         flash('Downloading PC Install Wizard!')
-        <a href='build_dists/iToven Sounds-Musical AI Setup.exe'> </a>
         if request.method == 'POST':
             if request.form['home-redirecters'] == 'redirecter-portal':
                 return redirect(url_for('views.home'))
@@ -117,7 +116,6 @@ def download_pc():
 def download_mac():
     if not os.name == 'nt':
         flash('Downloading Mac Install Wizard')
-        <a href='build_dists/iToven Sounds - Musical AI Setup.zip'> </a>
         if request.method == 'POST':
             if request.form['home-redirecters'] == 'redirecter-portal':
                 return redirect(url_for('views.home'))
