@@ -81,7 +81,7 @@ def sign_up():
             if user:
                 flash('Email already exists.', category='error')
             elif email in server_funcs.txt_file_to_listv2('/static/bad_emails.txt'):
-                flash('Sneaky! I worked too hard on this project to allow disposable emails. Try a safer email provider.')
+                flash('Sneaky! We worked too hard on this project to allow disposable emails. Try a safer email provider.')
             elif len(email) < 4:
                 flash('Email must be greater than 3 characters.', category='error')
             elif password1 != password2:
