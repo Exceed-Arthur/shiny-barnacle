@@ -465,7 +465,7 @@ def create_dyno_acct(username: str, platypus: str):
     AWSAccessKeyId = cred.AWSAccessKeyId
     AWSSecretKey = cred.AWSSecretKey
     table = 'itoven_nottauserbase'
-    dynamodb = boto3.client(
+    dynamodb = boto3.resource(
         service_name='dynamodb',
         region_name="us-east-2",
         aws_access_key_id=AWSAccessKeyId,
