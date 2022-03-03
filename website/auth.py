@@ -67,7 +67,7 @@ def logout():
 
 @auth.route('/Register', methods=['GET', 'POST'])
 def sign_up():
-    print("hello70)
+    print("hello70")
     global email
     global password1
     global password2
