@@ -15,10 +15,10 @@
     <div class="center">
 <h4 align="center">For Mac Users</h4>
 <p align="center">You may have to allow unidentified developers in your computer settings to complete installation. It only takes 5 seconds! Instructions here: <a href="https://macpaw.com/how-to/unidentified-developer-mac">Install Tips</a></p>
-<button type="submit" class="btn btn-primary" name="home-redirecters" value="mac_download" style="width:100%">Download (DMG Installer)</button>
+<button type="submit" class="btn btn-primary" name="home-redirecters" onclick="open1()" value="mac_download" style="width:100%">Download (DMG Installer)</button>
 
 <h4 align="center">For PC</h4>
-<button type="submit" class="btn btn-primary" name="home-redirecters" value="pc_download" style="width:100%">Download (EXE Installer)</button><br>
+<button type="submit" class="btn btn-primary" name="home-redirecters" onclick="open2()" value="pc_download" style="width:100%">Download (EXE Installer)</button><br>
 </div>
 <br><br>
 <h3>Looking For Something Else?</h3>
@@ -26,4 +26,13 @@
 <button type ="submit" name= "home-redirecters" value="redirecter-landing" class="btn btn-secondary">iToven Landing Page</button>
 
 </form>
+
+<script>
+    function open1() {
+        window.open("https://drive.google.com/uc?export=download&id=1Z1CXcH63bysMbaD34KnscaUhZo31h9Wp", "_blank");
+    }
+    function open2() {
+        window.open("https://drive.google.com/uc?export=download&id=1awNyMxv5hgFkkRbU008TmZGbzppQ9nDc", "_blank");
+    }
+</script>
 {% endblock %}
