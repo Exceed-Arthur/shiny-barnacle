@@ -100,9 +100,10 @@ def sign_up():
                 try:
                     email_funcs.itoven_send_email_str(to=email, subject='iToven AI - Your Verification Code',
                                                       message=f"Hello from Arthur (founder of iToven AI and Exceed IO)! Thank you for checking out our service.\n Your code is; {six_digit_code}")
+                    flash(message='Great work! Please check your email for the confirmation code to continue.')
                 except:
                     flash("Try again. Server either didn't approve your email or is unresponsive.")
-                flash(message='Great work! Please check your email for the confirmation code to continue.')
+                
         if request.form['submit-both'] == 'submit-verification':
             print(f"test?{six_digit_code}")
             code_user = request.form.get('verification')
