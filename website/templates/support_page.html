@@ -2,7 +2,7 @@
 %}
 <head><meta name="description" content="iToven Musical AI is changing the way music is produced, performed, and taught. Download our free software to start making great beats, neat sounds, and professional sounding songs. Free music samples and music composition education,">
 	<meta name="keywords" content="Music, beats, BEATS, PRODUCERS, WAVS, WAV, SAMPLES, HIPHOPPRODUCTION, DRUMKIT, DRUM KITS, DRUM KIT, 808, 909, SP500, HI HAT, HAT, SNARE, TOM DRUM, TRAVIS SCOTT, MIKE DEAN, J DILLA, HOTBOY, WONDAGURL, RUN THE JEWELS, MEOW THE JEWELS, LABCOOKINSTRUMENTAL, INSTRUMENTAL MAKER, COMPOSITION, MUSIC COMPOSITION, SONGWRITING, LOGIC PRO X, FRUITYLOOPS, FLSTUDIO10, FLSTUDIO, FL STUDIO, ABLETON, ABLETON LIVE, MIDI, SPLICE, SOUNDS, LOOPS, drum machine, synthesizer, organ, guitar, piano, learn piano, music theory, theory music, chords, keys, notes, scales, time signatures, time signature, TIME SIGNATURE, SCALE, SCALES, NOTE, NOTES, CHORD, ORGAN, PIANO">
-        <link rel="shortcut icon" type="image/png" href="/images/LogoMakr.png" sizes="32x32"><link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+        <link rel="shortcut icon" type="image/png" href="/images/LogoMakr.png" sizes="32x32"><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <h1 align="center">Contact and Assistance</h1>
 <h5 align="center">Do not fret. We will solve any issues you may have. Just send an email describing your issue and include your username. During business hours, it will be addressed as quickly as possible.</h5>
@@ -15,4 +15,138 @@
 <button type ="submit" name= "home-redirecters" class="btn btn-primary" value="redirecter-account">Home</button>
 
 </form>
+  <script>
+function ghostCursor(options) {
+  let hasWrapperEl = options && options.element
+  let element = hasWrapperEl || document.body
+
+  let width = window.innerWidth
+  let height = window.innerHeight
+  let cursor = { x: width / 2, y: width / 2 }
+  let particles = []
+  let canvas, context
+
+  let baseImage = new Image()
+  baseImage.src =
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAQAAAAHtlR4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfmAwQWDy0e5yDAAAAC40lEQVQ4y23UXW+TBRjG8d/TPe1e27FXcGGUvTBlmxoghLmRoIAY44EHGhO/hh/AD+FX8EQSD43JkMT4MgIiYixkug2HsCEb69bSdu3atY8HIzCj98mVO7mu++i+/oF9E0HclKPWtMr5RYFgv+XFFu3JqHc1uW/dupSDHlhQ2x8K9tl7TPvIom+UtOgSU5ZUl/HwhTV4drnDuFe87bo5bVKSOvXq00DVr761sRcKIuLGDGoyI+FrCUmHvapV3bKYkqRuNV/5QYkgGjApL/C6d3wpp8dJL8tYtC5SVdJuw1H9IlfdC035yaA+aUvWHTTtiCtyOoxr2Fa0qVPBXWmjKqGaUVUJg25LmjRmVsqMfpFddUVL/vBESsWKztCUzw1o0yKv3wmLDptR8NCWTWUHjBlxTUNNTCNU0iXSKlJ3RErdeTu6DKp5atEtdx13VrN57Sqhk35EQ7MWveqO6VNQExdTM+ols27KOqMsqxwTlxBX0dAj0GJA3acu+tgjx6wqO6fP7245o0cUs+FNOVU5Q/LatfvCZavmXBaZtCA0rtm8xyaIWdRrUM6SYYEtSclnj5VTFen1m2EH5C0bFMb8peiswH0PnLYk76L3pc34RExW0oqYbq3uqOoIPXXbeedcc0OHcSsO+cw2Oq0qaCjZ0SzhiYq2mLJ116VdUnDVz2J27ajLK8gIbSiriCvpdk0Qqor8iWkfuOeBRw7oMuCQG9aMWLYrrqDdvLeshgIlO1bNGnHcuFCoSd6sVZcseCghriBrxB3FUBdKSnK2LeuQ0qSsKHTBths2TNiU1SZjwv3QTdOGzcspWdNjV4uUYadkXfdY3Gl3bMk7YcHfQUTopPcMuSdU0aJPJ+Ytyyk5bdgVZZsyewXaq2i7N0xJaQhlbSkoeqpgyIfmZGSeV3QfBLq9plNesyY5JQmnXDBr1oroOQT+hZlA2piiNV36pXX43i27/4OZfaFmk9IKehV891+Q/QMzghy+iv4goAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wMy0wNFQyMjoxNTo0NSswMDowMCVMIWMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDMtMDRUMjI6MTU6NDUrMDA6MDBUEZnfAAAAAElFTkSuQmCC"
+
+  function init() {
+    canvas = document.createElement("canvas")
+    context = canvas.getContext("2d")
+    canvas.style.top = "0px"
+    canvas.style.left = "0px"
+    canvas.style.pointerEvents = "none"
+
+    if (hasWrapperEl) {
+      canvas.style.position = "absolute"
+      element.appendChild(canvas)
+      canvas.width = element.clientWidth
+      canvas.height = element.clientHeight
+    } else {
+      canvas.style.position = "fixed"
+      document.body.appendChild(canvas)
+      canvas.width = width
+      canvas.height = height
+    }
+
+    bindEvents()
+    loop()
+  }
+
+  // Bind events that are needed
+  function bindEvents() {
+    element.addEventListener("mousemove", onMouseMove)
+    element.addEventListener("touchmove", onTouchMove)
+    element.addEventListener("touchstart", onTouchMove)
+    window.addEventListener("resize", onWindowResize)
+  }
+
+  function onWindowResize(e) {
+    width = window.innerWidth
+    height = window.innerHeight
+
+    if (hasWrapperEl) {
+      canvas.width = element.clientWidth
+      canvas.height = element.clientHeight
+    } else {
+      canvas.width = width
+      canvas.height = height
+    }
+  }
+
+  function onTouchMove(e) {
+    if (e.touches.length > 0) {
+      for (let i = 0; i < e.touches.length; i++) {
+        addParticle(e.touches[i].clientX, e.touches[i].clientY, baseImage)
+      }
+    }
+  }
+
+  function onMouseMove(e) {
+    if (hasWrapperEl) {
+      const boundingRect = element.getBoundingClientRect()
+      cursor.x = e.clientX - boundingRect.left
+      cursor.y = e.clientY - boundingRect.top
+    } else {
+      cursor.x = e.clientX
+      cursor.y = e.clientY
+    }
+
+    addParticle(cursor.x, cursor.y, baseImage)
+  }
+
+  function addParticle(x, y, image) {
+    particles.push(new Particle(x, y, image))
+  }
+
+  function updateParticles() {
+    context.clearRect(0, 0, width, height)
+
+    // Update
+    for (let i = 0; i < particles.length; i++) {
+      particles[i].update(context)
+    }
+
+    // Remove dead particles
+    for (let i = particles.length - 1; i >= 0; i--) {
+      if (particles[i].lifeSpan < 0) {
+        particles.splice(i, 1)
+      }
+    }
+  }
+
+  function loop() {
+    updateParticles()
+    requestAnimationFrame(loop)
+  }
+
+  /**
+   * Particles
+   */
+
+  function Particle(x, y, image) {
+    const lifeSpan = 13
+    this.initialLifeSpan = lifeSpan //ms
+    this.lifeSpan = lifeSpan //ms
+    this.position = { x: x, y: y }
+
+    this.image = image
+
+    this.update = function(context) {
+      this.lifeSpan--
+      const opacity = Math.max(this.lifeSpan / this.initialLifeSpan, 0)
+
+      context.globalAlpha = opacity
+      context.drawImage(
+        this.image,
+        this.position.x, // - (this.canv.width / 2) * scale,
+        this.position.y //- this.canv.height / 2,
+      )
+    }
+  }
+
+  init()
+}
+new ghostCursor();
+</script>
 {% endblock %}
