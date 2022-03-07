@@ -1,0 +1,378 @@
+head {
+    foreground-color: white;
+    }
+
+body {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    font-family: sans-serif;
+    }
+body > div > h1 {
+    font-family: sans-serif;
+    padding: 72px;
+    color: #FFFACD;
+    font-size: 96px;
+    text-align:center}
+
+.center {
+    border-radius: 25px;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: sans-serif;
+    padding: 16px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+body > div > div > form > button:nth-child(1) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    font-family: sans-serif;
+    padding: 13px 16px;
+    color: #FFFACD;
+    }
+
+body > div > div > form > button:nth-child(4) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 12px 154px;
+    font-family: sans-serif;
+    color: #FFFACD;
+}
+
+body > div > div > form > button:nth-child(7) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    font-family: sans-serif;
+    padding: 14px 107px;
+    color: #FFFACD;
+}
+
+body > div > div > form > button:nth-child(1):hover {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #FF0F50;
+    border: none;
+    font-family: sans-serif;
+    padding: 13px 16px;
+    color: #FFFACD;
+}
+body > div > div > form > button:nth-child(7):hover {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #FF0F50;
+    border: none;
+    padding: 14px 107px;
+    color: #FFFACD;
+
+}
+
+body > div > div > form > button:nth-child(4):hover {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #FF0F50;
+    border: none;
+    padding: 12px 154px;
+    color: #FFFACD;
+}
+
+body > div > img {
+    border-radius:20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+}
+
+body > div.container > p > img {
+    border-radius:25px;
+    margin: 0;
+    top: 49%;
+    position: absolute;
+    right: 81%;
+}
+
+body > div > button:nth-child(6) {
+    font-size: 35px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 107px 14px 107px;
+    color: #FFFACD;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+
+}
+
+body > div > button:nth-child(10) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 122px 14px 107px;
+    color: #FFFACD;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+}
+
+body > div > form > div > button:nth-child(7) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 107px 14px 107px;
+    color: white;
+}
+
+body > div > form > button:nth-child(9) {
+    align: center;
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+    padding: 14px 107px 14px 107px;
+    color: white;
+}
+body > div > form > div > button:nth-child(3) {
+    font-size: 28px;
+    border-radius: 16px;
+    background-color: #770737;
+    border: none;
+
+    padding: 14px 100px 14px 100px;
+    color: white;
+    position: relative;
+    left: auto;
+    right: auto;
+}
+html {
+    position: relative;
+    min-width: 1200px;
+    min-height: 768px;
+    height: 100%;
+}
+
+* {
+    font-family: julius sans one;
+  }
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+#monkey2 {
+  background:black;
+  border-radius: 25px;
+  justify-content: center;
+  justify: center;
+  margin: auto;
+}
+body > div > div > h1 {
+  font-family: 'Righteous', cursive;
+  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:5rem;
+  letter-spacing:7px;
+  background-size:cover;
+  margin:0px;
+  color:transparent;
+}
+body > div > div > p {
+  font-family: 'Caveat', cursive;
+   color:transparent;
+  font-size:2rem;
+   letter-spacing:4px;
+  margin:0px;
+  background:linear-gradient(to right, #c4c4c4 ,#6a6a6a);
+  -webkit-background-clip: text;
+}
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+body > div.container > div > form > button.btn.btn-primary {
+    width: 40%;
+    height: 70%;
+    }
+
+
+#hide_div {
+  top: 300px;
+  height: 800px;
+  width: 1000px;
+
+}
+

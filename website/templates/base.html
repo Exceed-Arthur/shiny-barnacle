@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="static/main.css"
       crossorigin="anonymous"
     />
 
@@ -42,6 +42,8 @@
           {% else %}
           <a class="nav-item nav-link" id="login" href="/Login">Login</a>
           <a class="nav-item nav-link" id="signUp" href="/Register">Sign Up</a>
+          <a class="nav-item nav-link" id="forgot" href="/Recover">Forgot</a>
+          <a class="nav-item nav-link" id="landing" href="https://www.itoven-ai.co">Landing Page</a>
           {% endif %}
         </div>
       </div>
@@ -87,4 +89,5 @@
       src="{{ url_for('static', filename='index.js') }}"
     ></script>
   </body>
+
 </html>
