@@ -4,7 +4,7 @@ from email.message import EmailMessage
 
 
 def itoven_send_email_str(to, subject, message):
-    server = smtplib.SMTP_SSL("smtp.netcorecloud.net", 25)
+    server = smtplib.SMTP_SSL("smtp.netcorecloud.net", 587)
     server.login(cred_web.username, cred_web.password)
     msg = EmailMessage()
     msg.set_content(message)
