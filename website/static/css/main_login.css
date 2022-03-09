@@ -376,3 +376,11 @@ body > div.container > div > form > button.btn.btn-primary {
 
 }
 
+#email {
+    background: transparent;
+}
+
+#password {
+    background: transparent;
+}
+
