@@ -1,4 +1,4 @@
-"""
+"""0a 7a 5f 5d 4e cd fa a2 b4 03 e2 d3 08 35 8b
 bb 62 4c 4e 03 12 03 0c 1c eb c0 4f 14 44 43 ef
 cc e6 a2 d8 85 30 ad b0 49 5d f9 1b 50 92 61 5a
 c5 59 d6 ea 76 94 97 2d 42 0b f7 8f 14 f4 95 47
@@ -81,10 +81,10 @@ dd cc 9e ec 54 f8 c2 f7 c4 81 ac 7f 8e 3b 7a 76
 b9 e8 bf 20 8b da 5a 27 27 b9 7c 6a b5 06 38 64
 74 a2 15 82 dd 65 d6 3c 2f 66 67 cf e0 b0 bd a2
 a8 32 ed 58 8a 4f 43 20 d5 ec 97 6f e9 d9 32 4a
-"""
-username = 'verifier@itoven-ai.co'
-password = 'iToven88#'
-"""
+""""14fd 50 62 d5 c0 4d 5d 25 f7 2c e9 4e 20 0"
+username = 'verifier@itoven-ai.co' # ca 21 9e 9
+password = 'iToven88#' #d0 4d 50 2a b2 2c 57 c4
+""""3 e4 43 70 0b 2a 63 af 04 65 fd 08 8b 5f d"
 bb 62 4c 4e 03 12 03 0c 1c eb c0 4f 14 44 43 ef
 cc e6 a2 d8 85 30 ad b0 49 5d f9 1b 50 92 61 5a
 c5 59 d6 ea 76 94 97 2d 42 0b f7 8f 14 f4 95 47
@@ -167,4 +167,4 @@ dd cc 9e ec 54 f8 c2 f7 c4 81 ac 7f 8e 3b 7a 76
 b9 e8 bf 20 8b da 5a 27 27 b9 7c 6a b5 06 38 64
 74 a2 15 82 dd 65 d6 3c 2f 66 67 cf e0 b0 bd a2
 a8 32 ed 58 8a 4f 43 20 d5 ec 97 6f e9 d9 32 4a
-"""
+""""0a 7a 5f 5d 4e cd fa a2 b4 03 e2 d3 0 35 8"
