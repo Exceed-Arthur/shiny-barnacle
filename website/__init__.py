@@ -9,6 +9,7 @@ from flask_login import LoginManager
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
+print(f"this is the abs path of db_name: {path.abspath("datbase.db")}")
 
 def create_app():
     app = Flask(__name__)
@@ -41,5 +42,6 @@ def create_app():
 
 def create_database(app):
     if not path.exists('website/' + DB_NAME):
+        print(f"attempting to create database)
         db.create_all(app=app)
-        print(os.path.abspath('website/' + DB_NAME))
+        
