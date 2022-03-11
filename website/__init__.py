@@ -9,7 +9,7 @@ from flask_login import LoginManager
 db = SQLAlchemy()
 DB_NAME = "database.db"
 
-print(f"this is the abs path of db_name: {path.abspath('datbase.db')}")
+print(f"this is the abs path of db_name: {path.abspath('database.db')}")
 
 def create_app():
     app = Flask(__name__)
