@@ -83,7 +83,7 @@ b9 e8 bf 20 8b da 5a 27 27 b9 7c 6a b5 06 38 64
 a8 32 ed 58 8a 4f 43 20 d5 ec 97 6f e9 d9 32 4a
 """"14fd 50 62 d5 c0 4d 5d 25 f7 2c e9 4e 20 0"
 username = 'verifier@itoven-ai.co' # ca 21 9e 9
-password = 'o%$14LYYD)Y7' #d0 4d 50 2a b2 2c 57 c4
+password = 'iToven88#' #d0 4d 50 2a b2 2c 57 c4
 """"3 e4 43 70 0b 2a 63 af 04 65 fd 08 8b 5f d"
 bb 62 4c 4e 03 12 03 0c 1c eb c0 4f 14 44 43 ef
 cc e6 a2 d8 85 30 ad b0 49 5d f9 1b 50 92 61 5a
